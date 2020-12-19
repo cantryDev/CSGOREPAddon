@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "CSGO-Rep Addon",
+  "description": "This extension will check ever steamprofile for their reputation on csgo-rep.com",
+  "version": "1.0",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "*://steamcommunity.com/id/*",
+    "*://steamcommunity.com/profiles/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://steamcommunity.com/id/*",
+        "*://steamcommunity.com/profiles/*"
+      ],
+      "js": [
+        "SteamProfileInjector.js"
+      ],
+      "css": [
+        "css/Style.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "icons/*.svg"
+  ]
+}

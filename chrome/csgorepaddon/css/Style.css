@@ -1,0 +1,57 @@
+.circle {
+    font-size: 27px;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 2px solid #61738a;
+    margin: 15px 10% 15px 10%;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column
+}
+
+.circle.icon {
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    margin-left: -14px;
+    top: -14px;
+    left: 50%;
+    background-color: #61738a;
+    border-radius: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column
+}
+
+.circle.green {
+    color: #30a200;
+    border-color: #30a200
+}
+
+.circle.green.icon {
+    background-color: #30a200
+}
+
+.circle.yellow {
+    color: #e99400;
+    border-color: #e99400
+}
+
+.circle.yellow.icon {
+    background-color: #e99400
+}
+
+.circle.red {
+    color: #c40000;
+    border-color: #c40000
+}
+
+.circle.red.icon {
+    background-color: #c40000
+}
