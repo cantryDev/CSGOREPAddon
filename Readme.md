@@ -4,9 +4,9 @@ This chrome addons checks the reputation from the current steam profile on [CSGO
 
 ## Examples
 
-[Normal]: /examples/Normal.png?raw=true "Normal"
+<img alt="Normal" src="https://raw.githubusercontent.com/cantryDev/CSGOREPAddon/master/examples/Normal.png">
 
-[Banned]: /examples/Banned.png?raw=true "Banned"
+<img alt="Banned" src="https://raw.githubusercontent.com/cantryDev/CSGOREPAddon/master/examples/Banned.png">
 
 ## Installation
 
