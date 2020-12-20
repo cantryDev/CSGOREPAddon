@@ -14,8 +14,6 @@ if (document.querySelector('body').classList.contains('profile_page')) {
         body: '{"id":"203","query":{"steam_id":"' + profileOwnerSteamid + '"}}'
     }).then(response => response.json())
         .then(data => {
-            console.log(data);
-
             if (data.profile == null) {
                 data.profile = {"steam_id": profileOwnerSteamid, "feedback": {"neutral": 0, "positive": 0}};
             }
@@ -24,7 +22,7 @@ if (document.querySelector('body').classList.contains('profile_page')) {
             let element = document.createElement("div");
 
             if (data.ban != null) {
-                element.innerHTML = getBanWarning();
+                element.innerHTML = getBanWarningFromData(data);
             } else {
                 element.innerHTML = getHtmlElementFromData(data);
             }
@@ -57,8 +55,13 @@ if (document.querySelector('body').classList.contains('profile_page')) {
     }
 
     // get Html to display a warning
-    function getBanWarning() {
-        return `<h1 style="color: red">This user is banned on CSGO-REP.COM take caution</h1>`;
+    function getBanWarningFromData(data) {
+        let madFaceUrl = chrome.extension.getURL("icons/mad_face.svg");
+        return `<h3 style="color: red">Banned on CSGO-REP.COM</h3>
+                <a style="color: red" href='https://csgo-rep.com/profile/${data.profile.steam_id}'>Visit CSGO-REP.COM for more information</a>
+                <div class="circle red">
+                    <img src="${madFaceUrl}">
+                </div>`;
     }
 
 }

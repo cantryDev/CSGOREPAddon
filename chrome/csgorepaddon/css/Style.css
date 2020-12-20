@@ -49,7 +49,9 @@
 
 .circle.red {
     color: #c40000;
-    border-color: #c40000
+    border-color: #c40000;
+    margin-left: calc((100% - 75px) / 2);
+    margin-right: calc((100% - 75px) / 2);
 }
 
 .circle.red.icon {

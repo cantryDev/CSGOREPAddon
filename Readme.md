@@ -1,6 +1,12 @@
 # CSGO-REP Addon
 
-This chrome addons checks the reputation from the current steam profile on csgo-rep.com
+This chrome addons checks the reputation from the current steam profile on [CSGO-REP.COM](https://www.csgo-rep.com)
+
+## Examples
+
+[Normal]: /examples/Normal.png?raw=true "Normal"
+
+[Banned]: /examples/Banned.png?raw=true "Banned"
 
 ## Installation
 
